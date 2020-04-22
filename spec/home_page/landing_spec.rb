@@ -4,9 +4,9 @@ RSpec.describe "As a user" do
 	describe "when i visit HowTube landing page", type: :feature do
 		it "I see the logo and a search field" do
 
-			visit "/how_tube"
+			visit "/"
 			expect(page).to have_content("HowTube")
-			
+			save_and_open_page
 			fill_in "Search", with: "Haircut"
 			click_on "Search"
 
