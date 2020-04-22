@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
 
-  get '/', to: "landing#show"
+  get "/HowTube", to: "search#index"
+  post "/HowTube", to: "search#update"
 end
