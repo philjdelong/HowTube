@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :videos only: [:index]
+
+  get "/HowTube", to: "search#index"
+  post "/HowTube", to: "search#update"
 end
