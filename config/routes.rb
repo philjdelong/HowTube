@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  get '/how_tube', to: 'landing#index'
+  get '/', to: "landing#show"
 end
